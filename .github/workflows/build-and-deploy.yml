@@ -68,4 +68,5 @@ jobs:
             docker run -d \
             --restart always \
             --name $(echo $IMAGE_NAME) \
+            -P \
             $(echo $REGISTRY)/$(echo $IMAGE_NAME):$(echo $GITHUB_SHA | head -c7)
