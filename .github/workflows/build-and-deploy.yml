@@ -16,8 +16,8 @@ on:
         required: true
 #2
 env:
-  REGISTRY: secrets.DIGITALOCEAN_REGISTRY_CONTAINER_URL
-  IMAGE_NAME: secrets.IMAGE_NAME
+  REGISTRY: ${{secrets.DIGITALOCEAN_REGISTRY_CONTAINER_URL}}
+  IMAGE_NAME: ${{secrets.IMAGE_NAME}}
 
 #3
 jobs:
